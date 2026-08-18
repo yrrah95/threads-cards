@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* 顏色與字體 token */
+  :root{
+    --paper:#F2EDDF;      /* 米色紙 */
+    --ink:#22201A;        /* 墨色 */
+    --clay:#C96442;       /* Claude 陶土橘 */
+    --faint:#8A8574;      /* 淡墨（次要字） */
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1350px}
+  body{
+    background:var(--paper);
+    font-family:"Noto Sans TC",sans-serif;
+    color:var(--ink);
+    position:relative;
+    /* 紙感：極淡的點狀紋理 */
+    background-image:radial-gradient(rgba(34,32,26,.05) 1px, transparent 1px);
+    background-size:26px 26px;
+  }
+  /* 手繪感外框：雙線微錯位 */
+  .frame{
+    position:absolute; inset:36px;
+    border:3px solid var(--ink);
+    border-radius:34px;
+  }
+  .frame::after{
+    content:""; position:absolute; inset:-11px;
+    border:1.5px solid var(--ink);
+    border-radius:42px;
+    opacity:.35;
+  }
+  .inner{
+    position:absolute; inset:36px;
+    padding:64px 72px 56px;
+    display:flex; flex-direction:column;
+  }
+  /* 頂列：系列名＋Day 徽章 */
+  .top{display:flex; justify-content:space-between; align-items:center}
+  .series{
+    font-size:30px; font-weight:700; letter-spacing:.06em;
+  }
+  .series small{display:block;font-size:20px;font-weight:500;color:var(--faint);letter-spacing:.18em;margin-top:6px}
+  .day{
+    font-family:"JetBrains Mono",monospace;
+    font-size:30px; font-weight:700;
+    color:var(--paper); background:var(--clay);
+    padding:10px 26px; border-radius:999px;
+    border:3px solid var(--ink);
+    box-shadow:6px 6px 0 var(--ink);
+  }
+  /* 中段 */
+  .mid{flex:1; display:flex; flex-direction:column; justify-content:center; gap:36px}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:30px; color:var(--faint);
+  }
+  .eyebrow b{color:var(--clay);font-weight:700}
+  h1{
+    font-size:112px; font-weight:900; line-height:1.28;
+    letter-spacing:.01em;
+  }
+  h1 .hl{
+    /* 反白色塊 */
+    background:var(--ink); color:var(--paper);
+    display:inline-block;
+    padding:0 22px 10px; border-radius:14px;
+    margin-top:18px;
+  }
+  .sub{
+    font-size:40px; font-weight:500; line-height:1.6; color:var(--ink);
+  }
+  .sub b{font-weight:900; border-bottom:8px solid var(--clay)}
+  /* 底部：終端機指令列（系列簽名） */
+  .term{
+    background:var(--ink); color:var(--paper);
+    border-radius:20px; padding:30px 36px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:26px; line-height:1.5; white-space:nowrap;
+    box-shadow:8px 8px 0 rgba(34,32,26,.18);
+  }
+  .term .p{color:var(--clay); font-weight:700}
+  .foot{
+    margin-top:36px;
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:26px; color:var(--faint); letter-spacing:.08em;
+  }
+  .foot .swipe{font-weight:700; color:var(--ink)}
+</style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="inner">
+    <div class="top">
+      <div class="series">每天讓 Claude Code 變強一點<small>CLAUDE CODE 字典</small></div>
+      <div class="day">Day 33</div>
+    </div>
+    <div class="mid">
+      <div class="eyebrow">skill: <b>idea-refine</b> — Addy Osmani ★ 80k</div>
+      <h1>把模糊點子<br><span class="hl">磨成一頁企劃</span></h1>
+      <div class="sub">腦子裡很清楚，寫下來只剩一句話？<br>這個 skill 只問你 <b>3~5 題</b>，逼出一份含「不做什麼」清單的企劃。</div>
+    </div>
+    <div class="term"><span class="p">$</span> npx skills@latest add addyosmani/agent-skills</div>
+    <div class="foot">
+      <span>@yrrah9_</span>
+      <span class="swipe">怎麼用 → 往左滑</span>
+    </div>
+  </div>
+</body>
+</html>
