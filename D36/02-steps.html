@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"><style>  :root{
+    --paper:#F2EDDF; --ink:#22201A; --clay:#C96442; --faint:#8A8574;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1350px}
+  body{
+    background:var(--paper);
+    font-family:"Noto Sans TC",sans-serif; color:var(--ink); position:relative;
+    background-image:radial-gradient(rgba(34,32,26,.05) 1px, transparent 1px);
+    background-size:26px 26px;
+  }
+  .frame{position:absolute; inset:36px; border:3px solid var(--ink); border-radius:34px;}
+  .frame::after{content:""; position:absolute; inset:-11px; border:1.5px solid var(--ink); border-radius:42px; opacity:.35;}
+  .inner{position:absolute; inset:36px; padding:56px 72px 52px; display:flex; flex-direction:column;}
+  .top{display:flex; justify-content:space-between; align-items:center}
+  .series{font-size:26px; font-weight:700; letter-spacing:.06em}
+  .day{
+    font-family:"JetBrains Mono",monospace; font-size:26px; font-weight:700;
+    color:var(--paper); background:var(--clay); padding:8px 22px; border-radius:999px;
+    border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink);
+  }
+  .cardtitle{text-align:center; margin-top:52px}
+  .cardtitle h1{font-size:76px; font-weight:900; letter-spacing:.02em}
+  .cardtitle .under{display:block; width:180px; height:10px; background:var(--clay); border-radius:5px; margin:18px auto 0}
+  .cardtitle p{font-size:32px; color:var(--faint); margin-top:20px; font-weight:500}
+  .mid{flex:1; display:flex; flex-direction:column; justify-content:center}
+  .foot{display:flex; justify-content:space-between; align-items:center; font-size:24px; color:var(--faint); letter-spacing:.08em}
+  .foot .page{font-family:"JetBrains Mono",monospace; font-weight:700; color:var(--ink)}
+  .mono{font-family:"JetBrains Mono",monospace}
+
+.steps{display:flex;flex-direction:column;gap:40px;margin-top:8px}.step{display:flex;align-items:flex-start;gap:30px}
+.num{flex:0 0 72px;height:72px;border-radius:50%;background:var(--ink);color:var(--paper);font-family:"JetBrains Mono",monospace;font-size:36px;font-weight:700;display:flex;align-items:center;justify-content:center;border:3px solid var(--ink)}
+.step.hot .num{background:var(--clay)}.stx b{display:block;font-size:40px;font-weight:900;margin-bottom:6px}
+.stx span{font-size:30px;line-height:1.55;color:#4a463c}
+.stx .q{font-family:"JetBrains Mono",monospace;font-size:26px;background:rgba(34,32,26,.08);padding:2px 10px;border-radius:8px}</style></head><body><div class="frame"></div><div class="inner"><div class="top"><div class="series">每天讓 Claude Code 變強一點</div><div class="day">Day 36</div></div><div class="cardtitle"><h1>三步開起來</h1><span class="under"></span></div><div class="mid"><div class="steps"><div class="step"><div class="num">1</div><div class="stx"><b>開功能</b><span>settings.json 的 <span class="q">env</span> 加那行變數</span></div></div><div class="step"><div class="num">2</div><div class="stx"><b>講需求</b><span>直接說「開三個隊友,各查一個方向」</span></div></div><div class="step hot"><div class="num">3</div><div class="stx"><b>進去講</b><span>輸入框下面那排選一個,按 <span class="q">Enter</span></span></div></div></div></div><div class="foot"><span>@yrrah9_</span><span class="page">2/4</span></div></div></body></html>
