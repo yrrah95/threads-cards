@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"><style>  :root{
+    --paper:#F2EDDF; --ink:#22201A; --clay:#C96442; --faint:#8A8574;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1350px}
+  body{
+    background:var(--paper);
+    font-family:"Noto Sans TC",sans-serif; color:var(--ink); position:relative;
+    background-image:radial-gradient(rgba(34,32,26,.05) 1px, transparent 1px);
+    background-size:26px 26px;
+  }
+  .frame{position:absolute; inset:36px; border:3px solid var(--ink); border-radius:34px;}
+  .frame::after{content:""; position:absolute; inset:-11px; border:1.5px solid var(--ink); border-radius:42px; opacity:.35;}
+  .inner{position:absolute; inset:36px; padding:56px 72px 52px; display:flex; flex-direction:column;}
+  .top{display:flex; justify-content:space-between; align-items:center}
+  .series{font-size:26px; font-weight:700; letter-spacing:.06em}
+  .day{
+    font-family:"JetBrains Mono",monospace; font-size:26px; font-weight:700;
+    color:var(--paper); background:var(--clay); padding:8px 22px; border-radius:999px;
+    border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink);
+  }
+  .cardtitle{text-align:center; margin-top:52px}
+  .cardtitle h1{font-size:76px; font-weight:900; letter-spacing:.02em}
+  .cardtitle .under{display:block; width:180px; height:10px; background:var(--clay); border-radius:5px; margin:18px auto 0}
+  .cardtitle p{font-size:32px; color:var(--faint); margin-top:20px; font-weight:500}
+  .mid{flex:1; display:flex; flex-direction:column; justify-content:center}
+  .foot{display:flex; justify-content:space-between; align-items:center; font-size:24px; color:var(--faint); letter-spacing:.08em}
+  .foot .page{font-family:"JetBrains Mono",monospace; font-weight:700; color:var(--ink)}
+  .mono{font-family:"JetBrains Mono",monospace}
+
+.doc{background:#FBF8EF;border:3px solid var(--ink);border-radius:20px;box-shadow:10px 10px 0 rgba(34,32,26,.18);overflow:hidden;margin-top:12px}
+.bar{display:flex;gap:12px;padding:18px 24px;background:var(--ink)}.dot{width:18px;height:18px;border-radius:50%;background:var(--paper);opacity:.5}
+.dot:first-child{background:var(--clay);opacity:1}.doc .body{padding:36px 44px;display:flex;flex-direction:column;gap:26px}
+.sec .h{font-family:"JetBrains Mono",monospace;font-size:28px;font-weight:700;color:var(--clay);margin-bottom:8px}
+.sec .t{font-size:29px;line-height:1.5;color:#3c382e}</style></head><body><div class="frame"></div><div class="inner"><div class="top"><div class="series">每天讓 Claude Code 變強一點</div><div class="day">Day 43</div></div><div class="cardtitle"><h1>還留著的東西</h1><span class="under"></span></div><div class="mid"><div class="doc"><div class="bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+<div class="body"><div class="sec"><div class="h">## 讀檔改檔</div><div class="t">檔案工具還在,但出不了目錄</div></div><div class="sec"><div class="h">## 公司設定</div><div class="t">managed settings 照樣生效</div></div><div class="sec"><div class="h">## 自己指定</div><div class="t">--settings 給的還是會讀</div></div><div class="sec"><div class="h">## 點名放行</div><div class="t">--tools 點到的工具可以留</div></div><div class="sec"><div class="h">## MCP 還在</div><div class="t">再加 --strict-mcp-config</div></div></div></div></div><div class="foot"><span>@yrrah9_</span><span class="page">3/4</span></div></div></body></html>
