@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"><style>  :root{
+    --paper:#F2EDDF; --ink:#22201A; --clay:#C96442; --faint:#8A8574;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1350px}
+  body{
+    background:var(--paper);
+    font-family:"Noto Sans TC",sans-serif; color:var(--ink); position:relative;
+    background-image:radial-gradient(rgba(34,32,26,.05) 1px, transparent 1px);
+    background-size:26px 26px;
+  }
+  .frame{position:absolute; inset:36px; border:3px solid var(--ink); border-radius:34px;}
+  .frame::after{content:""; position:absolute; inset:-11px; border:1.5px solid var(--ink); border-radius:42px; opacity:.35;}
+  .inner{position:absolute; inset:36px; padding:56px 72px 52px; display:flex; flex-direction:column;}
+  .top{display:flex; justify-content:space-between; align-items:center}
+  .series{font-size:26px; font-weight:700; letter-spacing:.06em}
+  .day{
+    font-family:"JetBrains Mono",monospace; font-size:26px; font-weight:700;
+    color:var(--paper); background:var(--clay); padding:8px 22px; border-radius:999px;
+    border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink);
+  }
+  .cardtitle{text-align:center; margin-top:52px}
+  .cardtitle h1{font-size:76px; font-weight:900; letter-spacing:.02em}
+  .cardtitle .under{display:block; width:180px; height:10px; background:var(--clay); border-radius:5px; margin:18px auto 0}
+  .cardtitle p{font-size:32px; color:var(--faint); margin-top:20px; font-weight:500}
+  .mid{flex:1; display:flex; flex-direction:column; justify-content:center}
+  .foot{display:flex; justify-content:space-between; align-items:center; font-size:24px; color:var(--faint); letter-spacing:.08em}
+  .foot .page{font-family:"JetBrains Mono",monospace; font-weight:700; color:var(--ink)}
+  .mono{font-family:"JetBrains Mono",monospace}
+
+.list{display:flex;flex-direction:column;gap:26px;margin-top:8px}
+.row{display:flex;align-items:center;gap:26px;border:3px solid var(--ink);border-radius:18px;background:rgba(255,255,255,.45);padding:22px 28px}
+.tag{font-family:"JetBrains Mono",monospace;font-size:25px;font-weight:700;color:var(--paper);background:var(--ink);padding:8px 16px;border-radius:10px;white-space:nowrap}
+.row:nth-child(odd) .tag{background:var(--clay)}.row span:last-child{font-size:29px;line-height:1.5}
+.note{margin-top:26px;text-align:center;font-size:26px;color:var(--faint)}</style></head><body><div class="frame"></div><div class="inner"><div class="top"><div class="series">每天讓 Claude Code 變強一點</div><div class="day">Day 44</div></div><div class="cardtitle"><h1>它自己會做的事</h1><span class="under"></span></div><div class="mid"><div class="list"><div class="row"><span class="tag">隔離</span><span>動檔案前先搬進自己的 worktree</span></div><div class="row"><span class="tag">存檔</span><span>不問你,直接 commit</span></div><div class="row"><span class="tag">推上去</span><span>有遠端就把分支 push 上去</span></div><div class="row"><span class="tag">開 PR</span><span>任務需要才開,草稿狀態</span></div><div class="row"><span class="tag">回報</span><span>結尾說做了什麼、放在哪</span></div></div><div class="note">每個 session 各吃各的額度</div></div><div class="foot"><span>@yrrah9_</span><span class="page">3/4</span></div></div></body></html>
