@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"><style>  :root{
+    --paper:#F2EDDF; --ink:#22201A; --clay:#C96442; --faint:#8A8574;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1350px}
+  body{
+    background:var(--paper);
+    font-family:"Noto Sans TC",sans-serif; color:var(--ink); position:relative;
+    background-image:radial-gradient(rgba(34,32,26,.05) 1px, transparent 1px);
+    background-size:26px 26px;
+  }
+  .frame{position:absolute; inset:36px; border:3px solid var(--ink); border-radius:34px;}
+  .frame::after{content:""; position:absolute; inset:-11px; border:1.5px solid var(--ink); border-radius:42px; opacity:.35;}
+  .inner{position:absolute; inset:36px; padding:56px 72px 52px; display:flex; flex-direction:column;}
+  .top{display:flex; justify-content:space-between; align-items:center}
+  .series{font-size:26px; font-weight:700; letter-spacing:.06em}
+  .day{
+    font-family:"JetBrains Mono",monospace; font-size:26px; font-weight:700;
+    color:var(--paper); background:var(--clay); padding:8px 22px; border-radius:999px;
+    border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink);
+  }
+  .cardtitle{text-align:center; margin-top:52px}
+  .cardtitle h1{font-size:76px; font-weight:900; letter-spacing:.02em}
+  .cardtitle .under{display:block; width:180px; height:10px; background:var(--clay); border-radius:5px; margin:18px auto 0}
+  .cardtitle p{font-size:32px; color:var(--faint); margin-top:20px; font-weight:500}
+  .mid{flex:1; display:flex; flex-direction:column; justify-content:center}
+  .foot{display:flex; justify-content:space-between; align-items:center; font-size:24px; color:var(--faint); letter-spacing:.08em}
+  .foot .page{font-family:"JetBrains Mono",monospace; font-weight:700; color:var(--ink)}
+  .mono{font-family:"JetBrains Mono",monospace}
+
+.cols{display:flex;gap:36px;margin-top:12px}.col{flex:1;border:3px solid var(--ink);border-radius:24px;overflow:hidden;background:rgba(255,255,255,.45)}
+.col h2{font-size:36px;font-weight:900;text-align:center;padding:20px 0;background:var(--ink);color:var(--paper);letter-spacing:.05em}
+.col.after h2{background:var(--clay)}.col ul{list-style:none;padding:30px 30px}
+.col li{font-size:30px;line-height:1.5;padding:16px 0 16px 44px;position:relative;border-bottom:2px dashed rgba(34,32,26,.18)}
+.col li:last-child{border-bottom:none}
+.col.before li::before{content:"✕";position:absolute;left:4px;color:var(--faint);font-weight:900}
+.col.after li::before{content:"✓";position:absolute;left:4px;color:var(--clay);font-weight:900}</style></head><body><div class="frame"></div><div class="inner"><div class="top"><div class="series">每天讓 Claude Code 變強一點</div><div class="day">Day 47</div></div><div class="cardtitle"><h1>跟滑鼠拉差在哪</h1><span class="under"></span></div><div class="mid"><div class="cols"><div class="col before"><h2>滑鼠拉</h2><ul><li>整段自己框</li><li>長回覆捲很久</li><li>常常框到多餘的</li></ul></div><div class="col after"><h2>/copy</h2><ul><li>一行指令</li><li>回覆原文完整</li><li>貼過去不用整理</li></ul></div></div></div><div class="foot"><span>@yrrah9_</span><span class="page">3/4</span></div></div></body></html>
